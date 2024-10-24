@@ -126,13 +126,13 @@ public class DirectoryMenu {
         int idDelete = Input.inputNumber();
         int index = managerDirectory.findByIndexId(idDelete);
         if (index != -1) {
-            System.out.println("Bạn có chắc chắn muốn xoá bài hát này không? (Y/N): ");
+            System.out.println("Bạn có chắc chắn muốn xoá danh bạ này không? (Y/N): ");
             String confirm = Input.inputString().toLowerCase();
             if (confirm.equals("y")) {
                 managerDirectory.remove(idDelete);
                 System.out.println("Xoá Thành Công!");
             } else {
-                System.out.println("Đã Huỷ Xoá Bài Hát!");
+                System.out.println("Đã Huỷ Xoá Danh Bạ!");
             }
         } else {
             System.out.println("Không Tìm Thấy Bài Hát Để Xoá!");
