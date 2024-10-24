@@ -31,7 +31,9 @@ public class ManagerDirectory implements Imanager<Directory> {
 
     @Override
     public void update(int id, Directory directory) {
-
+        int index =findByIndexId(id);
+        DirectoryList.set(index, directory);
+        readAndWriteDirectory.WriteDirectory(DirectoryList);
     }
 
     @Override

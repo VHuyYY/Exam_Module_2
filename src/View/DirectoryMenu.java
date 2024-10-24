@@ -122,7 +122,7 @@ public class DirectoryMenu {
 
     public void showDelete() {
         System.out.println("===== Menu Xoá =====");
-        System.out.println("Nhập Id Danh Bạ");
+        System.out.println("Nhập Phone Danh Bạ Cần Xoá");
         int idDelete = Input.inputNumber();
         int index = managerDirectory.findByIndexId(idDelete);
         if (index != -1) {
